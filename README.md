@@ -1,10 +1,40 @@
 # D.R.E.A.M./O.A.S.I.S.-ii
 
-General Simulation System:
 
 
 
-\##General Simulation System, created initially based off of the simulation system from the novel 'Ready Player One', "Artificial Intelligence Systems" like characters like 'HAL' and 'David' from films like "2001" and "Artificial Intelligence", and "A Love of Gaming, Statistics, and Theory Crafting".
+
+\##
+
+
+
+In the Spirit of Discovery, Science, and Imagination, 
+
+This project is open source and free for use and study.
+
+
+
+\##
+
+
+
+\## General Simulation System and Artificial Intelligence System feat. Both Bots/Agents and Users/Operators/Humans. 
+
+System for both Operators/Users and Agents/Bots alike; 
+
+Inspiration initially based off of the general simulation system from the novel 'Ready Player One'. 
+
+\#As well as Numerous Books, Films, Comics, and both Fiction and Non-Fiction.
+
+
+
+\## "This system design grew out of A Love of Gaming, Statistics, and Theory Crafting and most importantly, Life, The Mind and The Imaginal".
+
+
+
+\## System is intended both for Simulation and Artificial Intelligence Agency.
+
+\## ! Remember to go outside on Tuesdays and Thursdays.
 
 
 
