@@ -1,0 +1,13 @@
+# Oasis II Inventory
+
+## Core
+- main_kernel.py L minimal initialization
+
+## Bots
+- (none yet)
+
+## System Modules
+- (none yet)
+
+## Special Cards
+- (none yet)
