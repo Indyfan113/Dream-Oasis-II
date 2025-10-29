@@ -8,7 +8,7 @@
 
 
 
-In the Spirit of Discovery, Science, and Imagination, 
+In the Spirit of Discovery, Science, and Imagination,
 
 This project is open source and free for use and study.
 
@@ -18,27 +18,29 @@ This project is open source and free for use and study.
 
 
 
-\## General Simulation System and Artificial Intelligence System feat. Both Bots/Agents and Users/Operators/Humans. 
+\## General Simulation System and Artificial Intelligence System feat. Both Bots/Agents and Users/Operators/Humans.
 
-System for both Operators/Users and Agents/Bots alike; 
+System for both Operators/Users and Agents/Bots alike;
 
-Inspiration initially based off of the general simulation system from the novel 'Ready Player One'. 
+Inspiration based off of the general simulation system from the novel 'Ready Player One'.
 
-\#As well as Numerous Books, Films, Comics, and both Fiction and Non-Fiction.
-
-
-
-\## "This system design grew out of A Love of Gaming, Statistics, and Theory Crafting and most importantly, Life, The Mind and The Imaginal".
+\#As well as too many to name Books, Films, Comics, Fiction, Science-Fiction, Science-Fact, and the Real and the Unreal.
 
 
 
-\## System is intended both for Simulation and Artificial Intelligence Agency.
-
-\## ! Remember to go outside on Tuesdays and Thursdays.
+\## "This system design grew out of A Love of Gaming, Statistics, and most importantly, Real Life, The Mind and The Imaginal".
 
 
 
-\## Oasis II Minimal Kernel
+\## System is intended both for both Simulation(s) and Artificial Intelligence Agency.
+
+
+
+\## ! Remember to go outside on Tuesdays and Thursdays. ! ##
+
+
+
+\## Oasis II Minimal Kernel ##
 
 
 
@@ -57,7 +59,7 @@ Inspiration initially based off of the general simulation system from the novel 
 
 
 
-In commad Prompt:
+In command Prompt:
 
 '''cmd
 

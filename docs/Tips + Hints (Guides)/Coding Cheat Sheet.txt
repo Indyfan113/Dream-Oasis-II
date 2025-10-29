@@ -1,0 +1,122 @@
+
+#1 Git Basics
+#Tip: Always run git status first to avoid accidentally committing unwanted files.
+
+bash
+
+# Check repo status
+git status
+
+# Stage all changes
+git add .
+
+# Stage a single file
+git add path/to/file
+
+# Commit staged changes
+git commit -m "Commit message"
+
+# Push changes to remote
+git push origin main
+
+# Pull latest changes from remote
+git pull origin main
+
+# Show concise commit history
+git log --oneline --graph --decorate
+
+# Clone a repository
+git clone <repo_url>
+
+# Undo local edits
+git restore path/to/file
+
+# Unstage file from staging
+git reset path/to/file
+
+
+# 2 Python Commands
+# Tip: Always run scripts from the repository root to avoid import errors.
+
+# Run a Python script
+python script_name.py
+
+# Start Python REPL (interactive mode)
+python
+
+# Remove __pycache__ directories
+python -c "import shutil; shutil.rmtree('path/__pycache__', ignore_errors=True)"
+
+# Install a package
+pip install package_name
+
+# List installed packages
+pip list
+
+
+# 3 Git bash / git bash commands
+#Tip Use bash to run .sh scripts on Widows git Bash for full compatibility.
+
+# Make a script executable
+chmod +x scripts/script_name.sh
+
+# Run a shell script
+bash scripts/script_name.sh
+
+# Rename or move files
+mv old_name new_name
+
+# List files and permissions
+ls -la
+
+# Navigate directories
+cd path/to/folder
+
+# Create a new folder
+mkdir folder_name
+
+# 4 04S1S + 41-360-core
+# Initialize and start AI-360 core
+from ai_360.ai360_core import AI360
+ai360 = AI360()
+ai360.initialize()
+
+# Add a HelperBot
+from bots.helper_bot import HelperBot
+helper_bot = HelperBot()
+ai360.add_bot(helper_bot)
+
+# Add AI360Bot
+from bots.ai360_bot import AI360Bot
+ai360_bot = AI360Bot(ai360)
+ai360.add_bot(ai360_bot)
+
+# Check AI-360 system status
+ai360.system_status()
+
+# Show current chat history
+ai360_bot.show_history()
+
+# tip: Scripts to start full system: 
+# Start full Oasis II + AI-360
+bash scripts/start_oasis.sh
+
+# Start chat window only
+bash scripts/run_ai360_chat.sh
+
+# Run end-to-end bot test
+python run_full_ai360_test.py
+
+# 5 Work flow tips:
+
+## ! T and TR off!
+
+#Use unique test filenames (run_full_ai360_test.py, run_all_bots.py) to avoid confusion.
+
+Keep a .gitignore for temporary files (__pycache__, logs).
+
+Clean up __pycache__ when imports fail unexpectedly.
+
+Always stage and commit incrementally to prevent losing changes.
+
+Use chat history to debug AI-360 and HelperBot interactions.
