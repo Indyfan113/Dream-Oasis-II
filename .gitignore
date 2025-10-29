@@ -1,0 +1,40 @@
+# ======================
+# Python compiled files
+# ======================
+__pycache__/
+*.pyc
+
+# ======================
+# OS-specific files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# IDE / editor files
+# ======================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ======================
+# Logs and runtime data
+# ======================
+*.log
+*.sqlite3
+*.db
+*.tmp
+
+# ======================
+# Test or temporary scripts
+# ======================
+run_full_ai360_test.txt
+*.bak
+*.swp
+
+# ======================
+# Ignore local environment settings
+# ======================
+.env
+.env.*
