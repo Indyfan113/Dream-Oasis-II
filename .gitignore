@@ -8,7 +8,17 @@ __pycache__/
 # OS-specific files
 # ======================
 .DS_Store
+# Ignore memory file
+ai360_memory.json
+
+# Ignore chat history
+chat_history/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
 Thumbs.db
+
 
 # ======================
 # IDE / editor files
