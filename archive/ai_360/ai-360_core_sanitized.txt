@@ -1,0 +1,89 @@
+--- AI-360 CORE SANITIZED EXPORT ---
+
+/ai360/
+├── core_engine/
+│   ├── kernel.py
+│   ├── planner.py
+│   ├── context_store.py
+│   └── serializer.py
+├── api_layer/
+│   ├── server.py
+│   ├── endpoints/
+│   └── openapi.yaml
+├── interface_layer/
+│   ├── <persona_name>_adapter.py
+│   └── persona_router.py
+├── safety/
+│   ├── safety_core.py
+│   ├── reflection.py
+│   └── sandbox_policy.md
+├── persistence/
+│   ├── mem_cache.py
+│   └── export_txt.py
+├── utils/
+│   ├── validators.py
+│   ├── logger.py
+│   └── tests/
+├── README.md
+├── LICENSE
+└── ai-360_core_sanitized.txt
+
+--- SAMPLE kernel.py (pseudocode) ---
+def main(session_config):
+    """Entry point for AI-360 core."""
+    from safety.safety_core import SafetyCore
+    from core_engine.context_store import EphemeralCache
+    from interface_layer.persona_router import PersonaRouter
+
+    safety = SafetyCore(strict=True)
+    cache = EphemeralCache(lifetime='session')
+    router = PersonaRouter()
+
+    safety.run_preflight_checks()
+    personas = session_config.get('personas', ['default'])
+    router.register_personas(personas)
+
+    # Start API server (sandbox-safe)
+    start_api_server(router=router, cache=cache, config=session_config.get('api_config', {}))
+
+    while not safety.shutdown_requested():
+        try:
+            task = router.poll_incoming()
+            if task:
+                plan = router.plan_task(task)
+                result = router.execute(plan)
+                router.emit(result)
+        except Exception as e:
+            router.log_error(f"Task execution failed: {e}")
+
+    safety.run_postmortem()
+
+if __name__ == "__main__":
+    test_config = {'personas': ['default'], 'api_config': {}}
+    main(test_config)
+
+--- README.md (generic) ---
+AI-360 Core
+-----------
+A modular AI reasoning and creative assistant architecture.
+All references to personal bots or private data have been removed.
+Includes:
+- core_engine: orchestrates tasks
+- api_layer: REST/WebSocket endpoints
+- interface_layer: persona adapters
+- safety: sandbox & reflection
+- persistence: ephemeral memory & export
+- utils: helpers & tests
+
+Usage:
+1. Place the 'ai360/' folder inside your Oasis II project
+2. Ensure Python 3.x environment
+3. Run 'core_engine/kernel.py' to start sandbox session
+4. Refer to sandbox_policy.md for safe usage
+
+--- LICENSE ---
+MIT License (placeholder)
+Use, modify, and distribute freely under MIT terms.
+Verify before official release.
+
+--- END OF EXPORT ---
