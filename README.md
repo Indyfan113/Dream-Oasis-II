@@ -1,4 +1,4 @@
-# D.R.E.A.M./O.A.S.I.S.-ii
+# Oasis ii + Ai 360
 
 
 
@@ -18,13 +18,13 @@ This project is open source and free for use and study.
 
 
 
-\## General Simulation System and Artificial Intelligence System feat. Both Bots/Agents and Users/Operators/Humans.
+\## General Simulation System and Artificial Intelligence System 
 
-System for both Operators/Users and Agents/Bots alike;
+feat. Both Bots/Agents and Users/Operators/Humans.
 
-Inspiration based off of the general simulation system from the novel 'Ready Player One'.
 
-\#As well as too many to name Books, Films, Comics, Fiction, Science-Fiction, Science-Fact, and the Real and the Unreal.
+
+Inspired off of the general simulation system from the novel 'Ready Player One', As well as, numerous Book, Film, Comic, Fiction, Science-Fiction, Science-Fact, and the Real and the Unreal.
 
 
 
@@ -50,20 +50,90 @@ Inspiration based off of the general simulation system from the novel 'Ready Pla
 
 * core. : Main kernel logic
 * bots/ : AI bots and agents
-* system. : Shared tools and helper modules
+* system/ : Shared tools and helper modules
 * init/ : Initialization scripts and configs
 * docs/ : Guides and documentation
 * inventory/ : Inventory of modules, bots, cards, and states
+
+
 
 \## How to run the Kernel
 
 
 
-In command Prompt:
+Open a terminal or command prompt and navigate to the project folder:
 
-'''cmd
 
-cd oasis-ii
 
-python core\\main\_kernel.py
+cd ~/Desktop/Oasis-II
+
+
+
+
+
+Start the AI-360 Kernel:
+
+
+
+python ai360\_core.py
+
+
+
+
+
+Using AI-360
+
+
+
+Enter your user ID when prompted:
+
+
+
+Enter your user ID: hunter
+
+
+
+
+
+Interact with AI-360 using text commands:
+
+
+
+hunter >> hello world
+
+❄️ AI-360 (hunter) received: hello world
+
+
+
+
+
+Token commands (optional, for advanced features):
+
+
+
+Add a token: /add\_token <token\_name>
+
+
+
+List tokens: /list\_tokens
+
+
+
+Remove a token: /remove\_token <token\_name>
+
+
+
+Notes for Users
+
+
+
+Memory and chat logs are stored locally and not included in the repository.
+
+
+
+The system is modular — you can expand with new bots, modules, or simulations.
+
+
+
+Old/test files are kept in the archive/ folder for reference.
 
